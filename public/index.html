@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="calculadora-container">
+        <div class="pantalla">
+            <div id="display" class="display">0</div>
+        </div>
+        <div class="botones-grid">
+            <!-- Primera fila: AC, +/-, %, ÷ -->
+            <button class="boton funcional" data-action="clear">AC</button>
+            <button class="boton funcional" data-action="toggle-sign">+/-</button>
+            <button class="boton funcional" data-action="percent">%</button>
+            <button class="boton operador" data-action="divide">÷</button>
+            
+            <!-- Segunda fila: 7, 8, 9, × -->
+            <button class="boton numero" data-number="7">7</button>
+            <button class="boton numero" data-number="8">8</button>
+            <button class="boton numero" data-number="9">9</button>
+            <button class="boton operador" data-action="multiply">×</button>
+            
+            <!-- Tercera fila: 4, 5, 6, - -->
+            <button class="boton numero" data-number="4">4</button>
+            <button class="boton numero" data-number="5">5</button>
+            <button class="boton numero" data-number="6">6</button>
+            <button class="boton operador" data-action="subtract">-</button>
+            
+            <!-- Cuarta fila: 1, 2, 3, + -->
+            <button class="boton numero" data-number="1">1</button>
+            <button class="boton numero" data-number="2">2</button>
+            <button class="boton numero" data-number="3">3</button>
+            <button class="boton operador" data-action="add">+</button>
+            
+            <!-- Quinta fila: 0 (ancho doble), ., = -->
+            <button class="boton numero cero" data-number="0">0</button>
+            <button class="boton numero" data-action="decimal">.</button>
+            <button class="boton operador" data-action="equals">=</button>
+        </div>
+    </div>
+    
+    <script src="js/calculator.js"></script>
+</body>
+</html>
