@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejor Calculadora Simple</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header class="calculator-header">
+            <h1>Mejor Calculadora Simple</h1>
+        </header>
+        
+        <div class="calculator">
+            <div class="display">
+                <div class="display-screen" id="display">0</div>
+            </div>
+            
+            <div class="buttons">
+                <!-- Fila 1 -->
+                <button class="btn btn-clear" onclick="clearAll()">AC</button>
+                <button class="btn btn-operator" onclick="clearEntry()">CE</button>
+                <button class="btn btn-operator" onclick="calculatePercentage()">%</button>
+                <button class="btn btn-operator" onclick="setOperation('/')" data-operation="divide">÷</button>
+                
+                <!-- Fila 2 -->
+                <button class="btn btn-number" onclick="appendNumber('7')">7</button>
+                <button class="btn btn-number" onclick="appendNumber('8')">8</button>
+                <button class="btn btn-number" onclick="appendNumber('9')">9</button>
+                <button class="btn btn-operator" onclick="setOperation('*')" data-operation="multiply">×</button>
+                
+                <!-- Fila 3 -->
+                <button class="btn btn-number" onclick="appendNumber('4')">4</button>
+                <button class="btn btn-number" onclick="appendNumber('5')">5</button>
+                <button class="btn btn-number" onclick="appendNumber('6')">6</button>
+                <button class="btn btn-operator" onclick="setOperation('-')" data-operation="subtract">−</button>
+                
+                <!-- Fila 4 -->
+                <button class="btn btn-number" onclick="appendNumber('1')">1</button>
+                <button class="btn btn-number" onclick="appendNumber('2')">2</button>
+                <button class="btn btn-number" onclick="appendNumber('3')">3</button>
+                <button class="btn btn-operator" onclick="setOperation('+')" data-operation="add">+</button>
+                
+                <!-- Fila 5 -->
+                <button class="btn btn-number btn-wide" onclick="appendNumber('0')">0</button>
+                <button class="btn btn-number" onclick="appendDecimal()">.</button>
+                <button class="btn btn-equals" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/calculator.js"></script>
+</body>
+</html>
